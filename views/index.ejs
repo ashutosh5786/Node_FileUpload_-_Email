@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Home Page</title> 
+      
+    <style type="text/css" media="screen"> 
+        body { 
+            background-color: skyblue; 
+            text-decoration-color: white; 
+            font-size:7em;  
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <center>This is our home page.</center> 
+
+
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Enter Your Name"><br>
+    <input type="text" name="email" placeholder="Enter Your Email"><br>
+    <input type="text" name="ph" placeholder="Enter Your Phone Number"><br>
+    <input type="text" name="tid" placeholder="Enter Your Transcation Id"><br>
+    <input type="file" id="myFile" name="myFile">
+    <input type="submit" value = "Submit">
+</form>
+
+</body> 
+  
+</html>     
