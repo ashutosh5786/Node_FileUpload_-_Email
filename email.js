@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv').config();
 
-exports.email  = function (text, filename, path) {
+exports.email  = function (text1, filename, path) {
 // Sending the Mail request
     var transporter = nodemailer.createTransport({
     host: process.env.HOST,
@@ -21,8 +21,8 @@ exports.email  = function (text, filename, path) {
     from: process.env.FROM,
     to: process.env.TO,
     subject: 'test2',
-    html: `<h1>This is the Test Mail!</h1><br> ${text}`,
-    text: text,
+    html: `<h1>This is the Test Mail!</h1><br> ${text1}`,
+    text: text1,
     attachments: [{
         //Use the Url as an attachment
         filename: filename,       // We have to pass the filename 
