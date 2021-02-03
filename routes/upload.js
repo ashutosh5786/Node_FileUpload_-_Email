@@ -28,7 +28,7 @@ router.post('/upload',upload.single('myFile'), (req, res, next) => {
       //return next(err)
   }else{
     res.render('success')
-  }
+  } 
   var name = req.body.name;
   var emailu = req.body.email;
   var phone = req.body.ph;
